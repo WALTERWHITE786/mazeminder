@@ -1,0 +1,12 @@
+[tool.ruff]
+# Tell Ruff (the linter) that your Python package code
+# lives inside the 'src' directory. This lets it
+# correctly understand relative imports like '.settings'.
+src = ["src"]
+
+[tool.pylance]
+# Tell Pylance (the VS Code language server) to also
+# look for imports inside the 'src' directory. This
+# will fix all the "reportMissingImports" squiggles
+# in your editor.
+extraPaths = ["src"]
